@@ -1,6 +1,5 @@
-# compiled binary
-/fofa-afrog
-/fofa-afrog.exe
+# compiled binary (tracked intentionally for direct use)
+# /fofa-afrog
 
 # credentials — never commit these
 .fofa-afrog.json
