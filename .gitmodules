@@ -1,0 +1,3 @@
+[submodule "pocs/afrog-pocs"]
+	path = pocs/afrog-pocs
+	url = https://github.com/zan8in/afrog-pocs.git
