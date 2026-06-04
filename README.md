@@ -22,12 +22,28 @@ FOFA query  →  numbered results table  →  target selection  →  afrog scan 
 - A [FOFA](https://fofa.info) account (email + API key)
 - [afrog POC collection](https://github.com/zan8in/afrog-pocs) cloned locally
 
-## Build
+## Quick start (pre-built binary, Linux x86-64)
 
 ```bash
-# If proxy.golang.org is unreachable in your region:
+# Clone with POCs included
+git clone --recurse-submodules https://github.com/ikun245/fofa-aforg.git
+cd fofa-aforg
+chmod +x fofa-afrog
+./fofa-afrog
+```
+
+When asked for the POC directory enter: `./pocs/afrog-pocs`
+
+## Build from source
+
+```bash
+git clone --recurse-submodules https://github.com/ikun245/fofa-aforg.git
+cd fofa-afrog
+
+# Use goproxy.cn if proxy.golang.org is unreachable in your region
 GOPROXY=https://goproxy.cn,direct go mod tidy
 GOPROXY=https://goproxy.cn,direct go build -o fofa-afrog ./cmd/fofa-afrog/
+./fofa-afrog
 ```
 
 ## Usage
