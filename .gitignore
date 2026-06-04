@@ -1,0 +1,18 @@
+# compiled binary
+/fofa-afrog
+/fofa-afrog.exe
+
+# credentials — never commit these
+.fofa-afrog.json
+
+# scan output files
+*.json
+!go.sum
+
+# Go workspace
+go.work
+go.work.sum
+
+# OS
+.DS_Store
+Thumbs.db
